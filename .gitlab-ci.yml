@@ -1,0 +1,23 @@
+stages:
+    - lint
+    - format
+
+format:
+    stage: format
+    tags:
+        - docker
+    dependencies: 
+        - build
+    script: 
+        - npm i
+        - npm run format-check
+
+lint:
+    stage: lint
+    tags:
+        - docker
+    dependencies: 
+        - build
+    script: 
+        - npm i
+        - npm run lint

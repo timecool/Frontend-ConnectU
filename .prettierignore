@@ -1,0 +1,6 @@
+*.js
+*.md
+package.json
+package-lock.json
+.eslintrc.json
+.prettierignore
